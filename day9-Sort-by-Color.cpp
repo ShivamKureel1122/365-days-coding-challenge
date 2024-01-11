@@ -7,11 +7,9 @@ void Solution::sortColors(vector<int> &A) {
         if(A[m] == 0) {
             swap(A[l], A[m]);
             l++; m++;
-        }
-        else if(A[m] == 1) {
+        } else if(A[m] == 1) {
             m++;
-        }
-        else {
+        } else {
             swap(A[m], A[h]);
             h--;
         }
